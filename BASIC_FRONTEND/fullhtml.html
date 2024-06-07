@@ -3,9 +3,265 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Full html</title>
 </head>
-<body>
+
+    <h1>Full Html</h1>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab rerum ipsa quae in assumenda harum doloremque libero. Libero pariatur accusamus praesentium fugiat facilis doloribus architecto fuga incidunt in, laborum voluptatem nulla aperiam ex officiis reprehenderit officia quibusdam blanditiis. Ullam, ducimus suscipit nesciunt iste harum quam eos aperiam quis cumque quos quidem velit!</div>
+   <!-- aab yeh upar wale ko wrap karne ke use alt+z -->
+   <!-- for commenting use ctrl+/    -->
+   <!-- for copy line down use shift+down -->
+
+    <div><h2>lists</h2>
+    <!-- unorderd list -->
+    <ul>   <!-- unorderd list -->
+        <li>red
+            <ul>
+                <li>light red</li>
+                <li> dark red</li>
+            </ul>
+        </li>
+
+        <li>yellow</li>
+        <li>blue</li>
+        <li>black</li>
+    </ul>   
+    <ol> <!-- orderd list -->
+        <li>red</li>
+        <li>yellow</li>
+        <li>blue</li>
+        <li>black</li>
+    </ol></div>
+   
+<div><h2>link or anchor tag and images</h2>
+<a href="https://www.google.co.in/">GOOGLE LINK</a> 
+<br>
+<a href="htmlhelp.html">link to file</a></div>
+ <img src="https://www.imgacademy.com/sites/default/files/img-academy-housing-hero.jpg" width="200px" height="200px" alt="building image">
+   
+ <!-- span is a inline element used to grp objs together so that we can style them using css. -->
+ <!-- div is a block element used to grp objs together-->
+
+ <h2> an assortment of elements</h2>
+
+ <hr>  <!-- horizontal rule -->
+ Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad voluptatem, at maxime, vel omnis itaque sint aperiam assumenda mollitia facilis delectus 
+
+ <br> <!-- break a line -->
+ 
+ Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus, animi!
+  
+ <p>
+    <!-- superscript and subscript -->
+    a<sup>2</sup> + b<sup>2</sup> 
+    <br>
+    H<sub>2</sub>O<sub>2</sub>
+ </p>
     
+ <h4> entity code</h4>
+ <!-- https://entitycode.com/#common-content for entiy codes or symbols -->
+  <p>&#38 or &amp;
+    &#174;	
+    &#167;	
+  </p>
+    
+  <h2>Semantic elements</h2>
+   <!-- they are just like div but they give more wider grouping like main,nav,footer. THEY ARE BLOCK ELEMENT-->
+ <nav>
+    <ol> <!-- orderd list -->
+        <li>red</li>
+        <li>yellow</li>
+        <li>blue</li>
+        <li>black</li>
+    </ol>
+ </nav>   
+  <main>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, iusto.
+  </main>
+  <footer>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis repellat in aut molestiae. Architecto voluptatem sapiente tempora eveniet et repellat ipsa doloribus dicta quam officiis! Voluptas ducimus nemo molestiae id!
+  </footer>
+  
+  <h4>emmet</h4>
+  <!-- main>section>h1 will give u the below -->
+  <!-- basically emmet are shortcuts and u can find them on https://docs.emmet.io/cheat-sheet/-->
+  <main>
+    <section>
+        emmet
+        <h1>head</h1>
+    </section>
+  </main>
+
+  <h2>Tables</h2>
+  <table>
+    <thead> <!--semantic markup-->
+        <th>animal</th>
+        <th>mass kg</th>
+        <th>flight</th>
+        <th>diet</th>
+        </thead>
+    </tr>
+    <tbody> <!--semantic markup--> 
+    <tr>
+        <td>crow</td>
+        <td>10</td>
+        <td>yes</td>
+        <td>omnivorous</td>
+    </tr>
+    <tr>
+        <td> osatrich</td>
+        <td>100</td>
+        <td>no</td>
+        <td>carnivorous</td>
+    </tr>
+    <tr>
+        <td>somailia osatrich</td>
+        <td>200</td>
+        <td>no</td>
+        <td>carnivorous</td>
+    </tr>
+</tbody>
+  </table>
+     
+    <h4>table 2</h4>
+
+  <table>
+    <thead> <!--semantic markup-->
+        <th rowspan="2">animal</th>
+        <th colspan="2">attributes</th>
+        <th rowspan="2">diet</th>
+        <tr>
+            <th> kg</th>
+            <th>flight</th>
+        </tr>
+        </thead>
+    </tr>
+    
+    <tbody> <!--semantic markup--> 
+    <tr>
+        <td>crow</td>
+        <td>10</td>
+        <td>yes</td>
+        <td>omnivorous</td>
+    </tr>
+    <tr>
+        <td> ostrich</td>
+        <td>100</td>
+        <td>no</td>
+        <td>carnivorous</td>
+    </tr>
+    <tr>
+        <td>somailia ostrich</td>
+        <td>200</td>
+        <td>no</td>
+        <td>carnivorous</td>
+    </tr>
+</tbody>
+  </table>
+
+  <h2>Input methods</h2>
+  <h3> forms</h3>
+  <!-- labels are used to assoctiate things together -->
+   <form action="/tacos"> hello
+   <label for="username">enter username</label>
+    <input type="text" placeholder="username" id="username" name="name"><br>
+    <!-- name is an attribute -->
+     <!-- http://127.0.0.1:5500/tacos?name=kalp&password=kalp&num=2 
+      this is what we get when we use name attribute it shws in url-->
+    <label for="password">enter password</label>
+    <input type="password" placeholder="password" id="password" name="password"> <br>
+    <input type="color"> <br>
+    <label>
+        enter number
+    <input type="number" placeholder="number" name="num" min="0" max="10"> <br>
+    <input type="number" placeholder="number" name="num" min="0" max="1000" step="2"> <br>
+</label> <br>
+<input type="submit"> <br>
+<!-- buttons -->
+<button>submit</button>
+<button type="submit">submit</button>
+<button>submit</button> 
+</form>
+ <h2>google searchbar</h2>
+<form action="https://www.google.com/search">
+    <input type="text" name="q">
+    <button>Search Google</button>
+</form>
+<h2>Youtube Search</h2>
+<form action="https://www.youtube.com/results?search">
+    <input type="text" name="query">
+    <button>Search youtube</button>
+</form>
+
+<h2>boxes</h2>
+<form action="/birds">
+    <input type="checkbox" name="agrees" id="agree">
+    <label for="agree">checkbox</label>
+</form>
+<!-- already checked box is below -->
+<form action="/birds">
+    <input type="checkbox" name="agrees" id="agreed" checked>
+    <label for="agreed">checkbox2 </label>
+    <h4> radio buttons</h4>
+    <p>
+        <label for="xs">XS:</label>
+        <input type="radio" name="size" id="xs" value="xs">
+        <label for="s">S:</label>
+        <input type="radio" name="size" id="s" value="s">
+        <label for="M">M:</label>
+        <input type="radio" name="size" id="M" value="M">
+    </p>
+      
+    <p>
+        <h3>menu option</h3>
+        <label for="meal">pls select a vegetable</label>
+        <select name="meal" id="meal">
+            <option value="potato">potato</option>
+            <!-- selected helps u pre select things -->
+            <option value="" selected>pls select an option</option>
+            <option value="tomato">tomato</option>
+            <option value="carrot">carrot</option>
+            <option value="cucumber">cucumber</option>
+            <option value="mushrooms">mushrooms</option>
+            <option value="brocoli">brocoli</option>
+        </select>
+    </p>
+    <p>
+        <h3>range</h3>
+        <label for="loud">audio</label>
+        <input type="range" name="loudness" id="loud" min="0" max="100" value="20"> 
+    </p>
+        <p>
+            <h3>text area</h3>
+            <label for="request">any special requests?</label>
+            <textarea name="requests?" id="requests" rows="10" cols="40" placeholder="type something here"></textarea>
+        </p>
+          
+        <p>
+            <h3>validations</h3>
+            <label for="names"> enter your name</label>
+            <input type="text" name="names" id="names" required> 
+             <div>
+
+             
+            <label for="naam"> enter your name</label>
+            <input type="text" name="naam" id="naam" minlength="5" maxlength="20">
+        </div>         
+        </p>
+         <p>
+            <label for="email"> enter your EMAIL</label>
+            <input type="email" id="email" name="email">
+            <div>
+                <label for="url"> enter your url</label>
+            <input type="url" id="url" name="url">
+            </div>
+         </p>
+    <button>submit</button>
+
+</form>
+
+
+
+
 </body>
 </html>
