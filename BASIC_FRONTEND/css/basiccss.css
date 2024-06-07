@@ -1,0 +1,23 @@
+h3{
+    color: brown;
+    background-color: plum;
+}
+ button{
+    color:  rgb(89, 151, 20);
+    background-color: #5FCFFC;
+ }
+ p{
+    color: orange;
+    line-height: 2;
+ }
+ h1{
+    text-align: center;
+    font-weight: 200;
+    text-decoration:blue underline wavy;
+    letter-spacing: 10px;
+    /* font-family:Georgia,Times New Roman,Times,serif; */
+    font-family:monospace;
+ }
+ a{
+    text-decoration: none;
+ }
