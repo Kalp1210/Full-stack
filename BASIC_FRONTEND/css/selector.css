@@ -1,0 +1,108 @@
+/* to style everything
+UNIVERSAL SELECTOR */
+/* * {
+    background-color:blanchedalmond;
+    color: brown;
+} */
+
+ body{
+      background-color: #f1faee;
+ }
+button{
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+h1,h2{
+    color: #1d3557;
+}
+/* use id as a selector */
+#signup{
+    background-color: #1d3557;
+    color:#f1faee;
+}
+span{
+    color: #457b9d;
+}
+/* use class as a selector */
+.tags{
+    font-size: 15px;
+    background-color: yellowgreen;
+}
+/* Descendant selectors */
+/* span a {
+    color: palevioletred;
+} */
+ /*  */
+.post a {
+    color: palevioletred;
+    text-decoration: none;
+    font-weight: 700;
+}
+footer a {
+    color: red;
+}
+/* adjacent selector */
+/* yeh just next wale ko style karta hai */
+h2+button{
+    font-size: 20px;
+    background-color: peru ;
+}
+/* direct selector  */
+/* yeh andar wale ko style karta hai */
+footer>a{
+    color: #457b9d;
+}
+/* attribute as a selector */
+input[type="password"]{
+    color: red;
+}
+a[href*="google"]{
+    color: orange;
+}
+
+/* PSEUDO CLASS */
+
+a:hover{
+    text-decoration: underline;
+}
+.post button:active {
+    background-color:#02c39a ;
+}
+.post:nth-of-type(2n){
+    background-color:#a3b18a ;
+}
+
+/* PSEUDO ELEMENT */
+h2::first-letter{
+    font-size: 40px;
+}
+p::first-line{
+    font-weight: 600;
+    color: purple;
+}
+p::selection{
+    background-color: #fcbf49;
+}  
+/* css cascade */
+/* what it does is ki baad wale ko prefrence dega yeh */
+/* upar bhi h1,h2 hai butn isne yeh wala consider kiya hai */
+h1,h2{
+  color: #9d0208;  
+}
+button{
+    background-color: darkblue; 
+    /* the below command makes it important */
+    /* !important; */
+}
+
+
+/* css sepcifity */
+/* id>class>element */
+.post button:hover {
+    background-color:#e63946;
+    color: #f1faee;
+}
+button:hover{
+    background-color: olive ;
+    font-size: 10px;
+}
