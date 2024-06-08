@@ -1,0 +1,120 @@
+ html{
+    font-size: 15px;
+ }
+ body{
+    margin: 0px;
+ }
+ div{
+    width: 250px;
+    height: 200px;
+    /* background-color:#bde0fe ; */
+}
+h1{
+    background-color:#ffc8dd ;
+    padding-left: 100px;
+    padding-top: 50px;
+    width: 200px;
+    margin: 0;
+}
+#one{
+    background-color:#ffddd2 ;
+    border-width:5px;
+    border-color: black;
+    border-style: solid;
+    margin: 30px 60px;
+    /* box-sizing: border-box; */
+}
+#two{
+    background-color:#caf0f8 ;
+    border-width: 5px;
+    border-color: #38a3a5;
+    border-style: dashed;
+    border-right-color: brown;
+    padding-right: 100px;
+    /* margin: 90px 90px; */
+
+}
+
+#three{
+    background-color:#c7f9cc ;
+
+    /* border: width/style/color */
+    border:5px solid black;
+    border-radius: 15%;
+}
+  /* SAME COMMANDS FOR MARGIN ANS PADDING */
+#p1 {
+    /* padding on all sides at 12px */
+    padding: 12px;
+}
+#p2{
+    /* padding vertical then horizontal */
+    padding: 5px 12px;
+}
+#p3{
+    /* padding top+right+bottom+left */
+    padding: 5px 12px 10px 2px;
+}
+ h2{
+    background-color: paleturquoise;
+    border: 3px solid black;
+    width: 3px;
+    padding: 50px;
+    margin: 10px;
+    /* from this we can change element to inline or block  */
+    display: inline;
+ }
+ span{
+    /* INLINE ELEMENTS DOES NOT FOLLOW WIDTH,HEIGTH, AND PADDING THEY JUST OVERLAP ON OTHER ELEMENTS */
+    background-color: rgb(255, 157, 190);
+    border: 3px solid black;
+    width: 100px;
+    padding: 20px;
+    margin: 10px;
+    
+
+ }
+
+
+#div1{
+    background-color: olivedrab;
+    border: 3px solid black;
+    width: 200px;
+    padding: 5px;
+    margin: 10px;
+    /* from this we can change element to inline or block  */
+    display: inline-block;
+}
+
+section{
+    background-color: grey;
+    width: 600px;
+    height: 600px;
+}
+/* yeh div 50% width lega apne parent , section ka which is 600px so uska half 300px */
+#div2{
+    background-color: #e5989b;
+    width: 50%;
+    height:70%;
+}
+
+/* em is another unit of measurment 1em is the og size of parent section and then 2em is twice the size of the parent */
+#ems article{
+    font-size: 30px;
+}
+#ems h3{ 
+    /* basically font size will be  60px */
+    font-size: 2em;
+}
+#ems ul{
+
+/* aab isme hota yeh hai ki har ul ka parent is uska upar wala ul toh woh 1.2em uske upar wale ul ka karega */
+   font-size: 1.5em;
+} 
+/* rem is relative to font size it is easier to wrk with. if the root font-size is 20px then 1rm is 20px always and 2rem is 40px */
+#rems h3{
+    font-size: 3rem;
+}
+#rems ul{
+       font-size: 1.5rem;
+    }
