@@ -1,0 +1,55 @@
+#op {
+    width: 500px;
+    height: 500px;
+    background-color: magenta;
+}
+#rgba{
+    width: 50%;
+    height: 50%;
+    /* rgba ka a is alpha channel it is a piece of a color but acts like opacity somewhat*/
+    /* alpha is for transperency of the color  */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* for hex add more 2 digits ranging the trancperency from oo to ff */
+    /* background-color: #12f29090; */
+}
+#opacity{
+    width: 50%;
+    height: 50%;
+    background-color: yellow;
+    /* opacity is for transperncy for everything in the id */
+    /* opacity applies to entire element and alpha to just the element */
+    opacity: 0.65;
+}
+div{
+    width: 100px;
+    height: 100px;
+    background-color: #3d405b;
+    border: 2px solid blacK;
+    margin: 10px;
+    display: inline-block;
+}
+#middle {
+    background-color: #39705d;
+}
+#static #middle{
+    position: static;
+    top: 100px;
+}
+#relative #middle{
+    /* this is relative to its og posn */
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+#absolute #middle{
+ /* this is relative to the body */
+    position: absolute;
+    top: 1200px;
+    left: 100px;
+}
+#fixed #middle{
+ /* this is relative to the body */
+    position: fixed;
+    top: 120px;
+    left: 500px;
+}
