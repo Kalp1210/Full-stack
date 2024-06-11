@@ -155,4 +155,39 @@ div{
 
 }
 
+#bg{
+    width: 80%;
+    height: 800px;
+    background-image: url("https://images.unsplash.com/photo-1716890385566-dee802c56d2d?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDEwfHhIeFlUTUhMZ09jfHxlbnwwfHx8fHw%3D");
+    /* background-size: contain; scales the img as largge as possible withouth croping or streching */
+    /* there is also background-repeat which helps us repeat however we want it  */
 
+    /* cover is scales the ig as large as possible it is not streched but is cropped */
+    background-size: cover;
+    background-position: bottom;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+#bg h1{
+    font-size: 80px;
+    color: rgb(255, 0, 0);
+}
+
+
+/* google fonts website
+https://fonts.google.com/ */
+
+#font p{
+    font-family: "Caveat Brush", cursive;
+    font-weight: 400;
+    width: 60%;
+    margin: 0 auto;
+
+}
+#font h2,h3,h4{
+    width: 60%;
+    margin: 0 auto;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: "PT Serif", serif;
+}
