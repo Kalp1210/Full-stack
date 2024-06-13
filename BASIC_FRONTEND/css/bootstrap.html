@@ -111,18 +111,37 @@
      </div>
      
     <h2 class="display-4">Responsive Grid</h2>
-    <div class="row">
+
+    <!-- align items align things as we want -->
+    <div class="row align-items-center">
         <!-- md ka matalab yeh hai ki medium screen ke niche yeh stack hojayenge rather being in the same line -->
       <div class="col-md-6 col-xl-3 bg-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsum quia corrupti, enim aspernatur distinctio dignissimos laudantium consectetur accusantium. Impedit corrupti ut dolor atque voluptates amet deleniti consequuntur cumque explicabo.</div>
-      <div class="col-md-6 col-xl-3 bg-success">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsum quia corrupti, enim aspernatur distinctio dignissimos laudantium consectetur accusantium. Impedit corrupti ut dolor atque voluptates amet deleniti consequuntur cumque explicabo.
+      <div class="col-md-6 col-xl-3 bg-success">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsum quia corrupti, enim aspernatur distinctio dignissimos laudantium consectetur accusantium. Impedit corrupti ut dolor atque voluptates amet deleniti consequuntur cumque explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ullam repellendus pariatur aut aperiam repudiandae, nesciunt perspiciatis quibusdam modi nam laudantium maiores ducimus velit nulla rem asperiores tempore porro ratione.
+      Atque minus vel, aspernatur dolor tempora provident exercitationem cupiditate culpa ullam porro iure facere nihil dignissimos ducimus maiores sunt totam ab rerum labore at. Voluptatem enim accusamus odio quia optio.
       </div>
-      <div class="col-md-6 col-xl-3 bg-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsum quia corrupti, enim aspernatur distinctio dignissimos laudantium consectetur accusantium. Impedit corrupti ut dolor atque voluptates amet deleniti consequuntur cumque explicabo.</div>
-      <div class="col-md-6 col-xl-3 bg-success">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsum quia corrupti, enim aspernatur distinctio dignissimos laudantium consectetur accusantium. Impedit corrupti ut dolor atque voluptates amet deleniti consequuntur cumque explicabo.
+      <div class="col-md-6 col-xl-3 bg-info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsum quia corrupti, enim aspernatur distinctio dignissimos laudantium consectetur accusantium. Impedit corrupti ut dolor atque voluptates amet deleniti consequuntur cumque explicabo. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit odio aspernatur delectus culpa ipsam accusantium, animi tempora ullam omnis suscipit itaque atque beatae, incidunt, expedita sit mollitia neque. Odio, beatae!</div>
+
+      <!-- align-self-end will align itself at the end -->
+      <div class="col-md-6 col-xl-3 bg-success align-self-end">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsum quia corrupti, enim aspernatur distinctio dignissimos laudantium consectetur accusantium. Impedit corrupti ut dolor atque voluptates amet deleniti consequuntur cumque explicabo.
       </div>
     </div> 
 
+
     <br><br><br>
 
+   
+    <h3>JUSTIFY CONTENT</h3>
+    <div class="row border justify-content-between justify-content-lg-end justify-content-xl-center">
+        <div class="col-md-4 bg-primary">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab porro perspiciatis ea doloribus, similique neque optio expedita quis quia impedit tempora est? Consequatur velit soluta tempora aperiam quos excepturi molestiae!
+        </div>
+        <div class="col-md-4 bg-info">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab porro perspiciatis ea doloribus, similique neque optio expedita quis quia impedit tempora est? Consequatur velit soluta tempora aperiam quos excepturi molestiae!
+        </div>
+    </div>
+   
+
+    <br><br><br>
 
     <div class="row">
         <!-- yeh bolta hai ki jab xl and upar screen rehgi tab  take 4 units each and jab mid hogi tab take 6 units each -->
@@ -138,15 +157,195 @@
 <img class="img-fluid" src="https://images.unsplash.com/photo-1590341717245-b1a7b599d843?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YnJpZHxlbnwwfHwwfHx8MA%3D%3D" alt="">
 </div>
 
+</div>
+<br><br><br>
 
+
+<h1 class="display-3">Forms</h1>
+
+  <div class="form-row">
+  <div class="form-group col-md-6 ">
+   <!-- email -->
+    <label for="email">Email</label>
+    <input type="email" class="form-control form-control-lg" id="email" placeholder="email">
+  </div>
+
+
+  <div class="form-group col-md-6">
+    <!-- password -->
+    <label for="password">password</label>
+    <input type="password" class="form-control" id="password" placeholder="password">
+ </div>
+ 
+</div>
+
+<div class="form-row">
+<div class="form-group col-md-5 ">
+    <!-- city -->
+     <label for="city">city</label>
+     <input type="text" class="form-control" id="city" placeholder="city">
+   </div>
+<div class="form-group col-md-3 ">
+    <!-- city -->
+     <label for="zip-code">zip-code</label>
+     <input type="text" class="form-control" id="zip-code" placeholder="zip-code">
+   </div>
+<div class="form-group col-md-4 ">
+    <!-- city -->
+     <label for="district">district</label>
+     <input type="text" class="form-control" id="district" placeholder="district">
+   </div>
+</div>
 
 </div>
 
+  <!-- select or dropdown option -->
+  <div class="form-group">
+    <label for="state">state</label>
+    <select class="form-control" name="state" id="state">
+        <option value="mum">gujurat</option>
+        <option value="pu">maharastra</option>
+    </select>
+  </div>
+
+  <button type="submit" class="btn btn-success">register</button>
+   
+
+  <!-- checkboxes -->
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+    <label class="form-check-label" for="defaultCheck1">
+      Default checkbox
+    </label>
+  </div>
+  <div class="custom-control custom-checkbox">
+    <input class="custom-control-input" type="checkbox" value="" id="customCheck1">
+    <label class="custom-control-label" for="customCheck1">
+      custom checkbox
+    </label>
+  </div>
+  <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2" disabled>
+    <label class="form-check-label" for="defaultCheck2">
+      Disabled checkbox
+    </label>
     
+
+    <!-- switches -->
+    <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="customSwitch1">
+        <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+      </div>
+   <br><br><br>
+
+      <!-- navbar -->
+       <!-- As a link -->
+<nav class="navbar navbar-light bg-light ">
+    <a class="navbar-brand" href="#">Navbar</a>
+  </nav>
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary sticky-top">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#expandme">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="expandme">
+    <div class="navbar-nav">
+        <a href="home" class="nav-item nav-link">home</a>
+        <a href="about" class="nav-item nav-link">about</a>
+        <a href="contact" class="nav-item nav-link">contact us</a>
+
+    </div>
+    <form class="form-inline ml-auto">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+      </form>
+</div>
+  </nav>
+
+
+
 
 
     <br> <br> <br> <br> <br> <br> <br>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum impedit voluptas et officiis exercitationem qui nobis architecto quam eos, cum nesciunt quisquam molestiae omnis minus fuga, numquam veniam unde sed.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum impedit voluptas et officiis exercitationem qui nobis architecto quam eos, cum nesciunt quisquam molestiae omnis minus fuga, numquam veniam unde sed.    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium quasi consectetur, repellendus corrupti veritatis rerum ullam sit nihil dignissimos blanditiis perspiciatis fugit repudiandae quia dolor nam. Maiores vitae velit pariatur?
+    Aspernatur odit libero similique doloribus eaque ea ducimus illum nesciunt. Ab ipsam dicta eius voluptates aliquam neque culpa doloremque veritatis at asperiores libero veniam harum, dolores dolorum suscipit praesentium. Quas?
+    Qui ratione optio at! Nostrum, exercitationem temporibus reprehenderit velit hic numquam ab doloremque enim animi voluptas accusantium amet doloribus vel ratione quidem ducimus, iure ipsum quisquam modi, culpa molestias ullam!
+    Blanditiis quasi neque asperiores consectetur error, numquam dolor excepturi veritatis nulla minima laborum a id illo sit eius ipsum corrupti recusandae veniam. Iure harum repudiandae iste molestias aut, magnam voluptatibus?
+    A consectetur repudiandae rerum atque qui id illo illum ipsam, excepturi impedit, dolorum in quo eius cupiditate corporis harum, dignissimos nihil nisi esse facilis similique! Sint earum veritatis voluptates dicta?
+    In, tempore repellendus rerum similique necessitatibus perferendis officiis, minus ea, sequi ipsam neque suscipit doloribus! Assumenda ad quae dolores expedita cumque consectetur cupiditate deleniti odit, eos deserunt, molestiae placeat quo.
+    Magni, provident tempora. Nostrum quasi a quae, iure beatae sint eveniet? Quibusdam vero labore quam animi amet obcaecati illum? Maiores aliquid perferendis cum repudiandae, dolorum eius laudantium laborum natus molestiae.
+    Sit possimus quia, quo impedit quod modi quos dolor similique quisquam quae doloribus harum perferendis laudantium dicta autem. Dignissimos, assumenda! Dolor magni quaerat sit reiciendis, quam cum facere assumenda ducimus?
+    </p>
+  
+
+    <!-- icons -->
+    <h2 class="display-4 text-primary">Icons 
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
+            <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13s1.12-2 2.5-2 2.5.896 2.5 2m9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2"/>
+            <path fill-rule="evenodd" d="M14 11V2h1v9zM6 3v10H5V3z"/>
+            <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4z"/>
+          </svg>
+    </h2>
+   <br>
+    <button class="btn btn-lg btn-danger">delete
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
+            <path d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47M8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"/>
+          </svg>
+    </button>
+    <div class="row">
+        <div class="col-md-4">
+  <div class="input-group">
+
+    <div class="input-group-prepend">
+        <span class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+          </svg></span>
+    </div>
+    <input type="text" class="form-control" placeholder="search">
+  </div>
+</div>
+</div>
+<br><br>
+
+<!-- utilities -->
+ <!-- like border,shadow -->
+  <h2>utilities</h2>
+  <div class="row">
+    <div class="col-md-4 border rounded border-success shadow-lg">
+        <button class="btn btn-primary shadow">shadow</button>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum officia itaque sunt eveniet, quam aspernatur aliquam tempore harum ullam? Qui non consequuntur quibusdam illum suscipit architecto quae nisi harum ipsum!
+    </div>
+  </div>
+ <br><br><br><br>
+ 
+ <!-- padding and margins -->
+  <!-- mb is margin and p is padding -->
+  <h3 class="mb-4">padding and margins</h3>
+  <div>
+    <button class="btn btn-primary p-0">padding 0</button>
+    <button class="btn btn-primary p-1">padding 1</button>
+    <button class="btn btn-primary p-2">padding 2</button>
+    <button class="btn btn-primary p-3">padding 3</button>
+    <button class="btn btn-primary p-4">padding 4</button>
+    <button class="btn btn-primary p-5">padding 5</button>
+  </div>
+   <br>
+  <div class="mt-5">
+    <button class="btn btn-primary p-0 pt-5">padding top</button>
+    <button class="btn btn-primary p-0 pl-5">padding Left</button>
+    <button class="btn btn-primary p-0 pb-5">padding bottom</button>
+    <button class="btn btn-primary p-0 pr-5">padding Right</button>
+
+    <!-- X is x axis or left and right  -->
+    <button class="btn btn-primary p-0 px-5">padding X</button>
+    <!-- Y is y axis or up and down -->
+    <button class="btn btn-primary p-0 py-5">padding Y</button>
+    
+    <button class="btn btn-danger p-0 p-sm-1 p-md-2 p-lg-3 p-xl-5">i auto change</button>
+  </div>
+    
+
 </div>
 
 
