@@ -36,3 +36,32 @@ const game = [
   ["hello", "hi"],
   ["bat", 3, 4],
 ];
+
+// OBJECT LITERALS
+const person = {
+  firstName: "nick",
+  lastName: "uzumaki",
+  hobbies: ["dancing", "running", "drawing"],
+  age: 22,
+  examMarks: 89,
+  totalMembers: 4,
+};
+// how to access some info in object literals
+// let surname= person.lastName;
+// let surname = person["last" + "Name"]; (this would the same thing as the key is being acessed as string and here it concats the string and gives the ans)
+let surname = person["lastName"];
+
+// to change things in an object
+let changeMarks = (person.examMarks = 99);
+
+// array ke andar object literals reh sakta hai ya object literals ke andar arrays reh sakta hai
+
+const comments = [
+  { username: "palash", text: "lololol", votes: 12 },
+  { username: "colt", text: "hello world", votes: 55 },
+  { username: "harry", text: "bye world", votes: 532 },
+];
+
+// accessing data in the above
+
+let coltVotes = comments[1].votes;
