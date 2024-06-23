@@ -9,7 +9,6 @@
 // console.log(9);
 // console.log(10);
 
-
 // ================================
 // FOR LOOP
 // ================================
@@ -44,11 +43,11 @@
 // ==================================
 
 // accesing data in array with the help of for loop
-const animals = ["lion", "tiger", "whale", "cow", "dog", "cat", "deer"];
+// const animals = ["lion", "tiger", "whale", "cow", "dog", "cat", "deer"];
 
-for (let i = 0; i < animals.length; i++) {
-  console.log(i, animals[i]);
-}
+// for (let i = 0; i < animals.length; i++) {
+//   console.log(i, animals[i]);
+// }
 
 // nested loops
 // for (let i = 1; i <= 5; i++) {
@@ -59,23 +58,33 @@ for (let i = 0; i < animals.length; i++) {
 // }
 
 // using nested loop to access data of array in array
-const seatingChart = [
-  ["jack", "kalp", "harry"],
-  ["palash", "yuma", "kevin", "deep"],
-  ["nanny", "alia", "tommy", "oreo"],
-];
+// const seatingChart = [
+//   ["jack", "kalp", "harry"],
+//   ["palash", "yuma", "kevin", "deep"],
+//   ["nanny", "alia", "tommy", "oreo"],
+// ];
 
-for (let i = 0; i < seatingChart.length; i++) {
-  const row = seatingChart[i];
-  console.log(`ROW #${i + 1}`);
-  for (let j = 0; j < row.length; j++) {
-    console.log(row[j]);
-  }
-}
-
+// for (let i = 0; i < seatingChart.length; i++) {
+//   const row = seatingChart[i];
+//   console.log(`ROW #${i + 1}`);
+//   for (let j = 0; j < row.length; j++) {
+//     console.log(row[j]);
+//   }
+// }
 
 // ==================================
 // WHILE LOOP
 // ==================================
 
- 
+// let count = 0;
+// while (count < 10) {
+//   console.log(count);
+//   count++;
+// }
+
+let input = prompt("hey say something!");
+while (true) {
+  input = prompt(input);
+  if (input.toLowerCase() === "stop copying me") break;
+}
+console.log("OK U WIN");
