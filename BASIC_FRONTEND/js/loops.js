@@ -82,9 +82,40 @@
 //   count++;
 // }
 
-let input = prompt("hey say something!");
-while (true) {
-  input = prompt(input);
-  if (input.toLowerCase() === "stop copying me") break;
+// let input = prompt("hey say something!");
+// while (true) {
+//   input = prompt(input);
+//   if (input.toLowerCase() === "stop copying me") break;
+// }
+// console.log("OK U WIN");
+
+//// ==================================
+// FOR OF LOOP
+// ==================================
+
+const subreddit = ["cringe", "books", "chickens", "funny", "pics", "cricket"];
+
+for (let i = 0; i < subreddit.length; i++) {
+  console.log(`Vist reddit.com/r/${subreddit[i]}`);
 }
-console.log("OK U WIN");
+
+// upar wala same with the help of for of loop
+// for loop syntax: for(variable of iterable){
+// statement
+// }
+for (let sub of subreddit) {
+  console.log(`Vist reddit.com/r/${sub}`);
+}
+
+// easier for nested array accesing data
+const seatingCharts = [
+  ["jack", "kalp", "harry"],
+  ["palash", "yuma", "kevin", "deep"],
+  ["nanny", "alia", "tommy", "oreo"],
+];
+
+for (let rows of seatingCharts) {
+  for (let students of rows) {
+    console.log(students);
+  }
+}
