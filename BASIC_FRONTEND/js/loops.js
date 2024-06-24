@@ -93,29 +93,59 @@
 // FOR OF LOOP
 // ==================================
 
-const subreddit = ["cringe", "books", "chickens", "funny", "pics", "cricket"];
+// const subreddit = ["cringe", "books", "chickens", "funny", "pics", "cricket"];
 
-for (let i = 0; i < subreddit.length; i++) {
-  console.log(`Vist reddit.com/r/${subreddit[i]}`);
-}
+// for (let i = 0; i < subreddit.length; i++) {
+//   console.log(`Vist reddit.com/r/${subreddit[i]}`);
+// }
 
 // upar wala same with the help of for of loop
 // for loop syntax: for(variable of iterable){
 // statement
 // }
-for (let sub of subreddit) {
-  console.log(`Vist reddit.com/r/${sub}`);
-}
+// for (let sub of subreddit) {
+//   console.log(`Vist reddit.com/r/${sub}`);
+// }
 
 // easier for nested array accesing data
-const seatingCharts = [
-  ["jack", "kalp", "harry"],
-  ["palash", "yuma", "kevin", "deep"],
-  ["nanny", "alia", "tommy", "oreo"],
-];
+// const seatingCharts = [
+//   ["jack", "kalp", "harry"],
+//   ["palash", "yuma", "kevin", "deep"],
+//   ["nanny", "alia", "tommy", "oreo"],
+// ];
 
-for (let rows of seatingCharts) {
-  for (let students of rows) {
-    console.log(students);
-  }
+// for (let rows of seatingCharts) {
+//   for (let students of rows) {
+//     console.log(students);
+//   }
+// }
+
+// FOR IN LOOP
+// ===================================
+// only used for object literals as the are non iterable
+
+const testScores = {
+  jack: 55,
+  kalp: 72,
+  harry: 23,
+  palash: 34,
+  yuma: 45,
+  kevin: 66,
+  deep: 76,
+  tommy: 88,
+  oreo: 90,
+};
+
+// for (let person in testScores) {
+//   console.log(`${person} scored ${testScores[person]}`);
+// }
+
+// if you wanna take avg of scores
+let total = 0;
+let scores = Object.values(testScores);
+for (let score of scores) {
+  total += score;
 }
+console.log(`the scores are :${scores}`);
+console.log(`the total of scores are ${total}`);
+console.log(`avg of total scores is ${total / scores.length}`);
