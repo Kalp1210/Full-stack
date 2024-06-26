@@ -205,8 +205,8 @@
 // =====================================
 
 // so what it does is if anything is wrong in try then catch is called or displayed
-try {
-  hello.toUpperCase();
-} catch {
-  console.log("ERROR!!");
-}
+// try {
+//   hello.toUpperCase();
+// } catch {
+//   console.log("ERROR!!");
+// }
