@@ -113,3 +113,100 @@
 //======================================
 // HIGHER ORDER FUNCTION
 // =====================================
+
+// function callTwice(func) {
+//   func();
+//   func();
+// }
+
+// function rollDie() {
+//   const roll = Math.floor(Math.random() * 6) + 1;
+//   console.log(roll);
+// }
+// callTwice(rollDie);
+
+// function callTenTimes(f) {
+//   for (let i = 0; i < 10; i++) {
+//     f();
+//   }
+// }
+// callTenTimes(rollDie);
+
+//======================================
+//RETURNING FUNCTION
+// =====================================
+
+// function makeMysteryFunc() {
+//   const random = Math.random();
+//   if (random > 0.5) {
+//     return function () {
+//       console.log("ITS A GOOD FUNCTION");
+//     };
+//   } else {
+//     return function () {
+//       console.log("ITS A BAD FUNCTION ");
+//       alert("stop trying to close this window");
+//       alert("stop trying to close this window");
+//       alert("stop trying to close this window");
+//       alert("stop trying to close this window");
+//       alert("stop trying to close this window");
+//       alert("stop trying to close this window");
+//     };
+//   }
+// }
+// const mystery = makeMysteryFunc();
+// console.log(mystery);
+
+// function makeBtweenFunc(min, max) {
+//   return function (num) {
+//     return num >= min && num <= max;
+//   };
+// }
+
+// const isChild = makeBtweenFunc(0, 18);
+// isChild(40); // false
+// isChild(8); // true
+
+//======================================
+//DEFINING METHODS
+// =====================================
+
+// const myMath = {
+//   pi: 3.14159,
+//   square(num) {
+//     return num * num;
+//   },
+//   cube(num) {
+//     return num ** 3;
+//   },
+// };
+// myMath.square(5) will give ans of 25
+
+//======================================
+// KEYWORD 'THIS'
+// =====================================
+
+// const cat = {
+//   name: "tommy",
+//   color: "grey",
+//   breed: "scottish fold",
+//   meow() {
+//     console.log(`this is`, this);
+//     console.log(`${this.name} says MEOWWWW!`);
+//   },
+// };
+
+// // now when we call meow2 it just says ('says MEOWWWW!') it does not call tommy as jab hum cat.meow(); bula te hai then woh keyword cat dot ke phele matter karta hai as yeh bata hai ki object yeh wale varibale se lena hai
+
+// const meow2 = cat.meow;
+
+//======================================
+// TRY AND CATCH
+// =====================================
+
+// so what it does is if anything is wrong in try then catch is called or displayed
+try {
+  hello.toUpperCase();
+} catch {
+  console.log("ERROR!!");
+}
