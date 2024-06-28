@@ -81,7 +81,7 @@
 //THE REDUCE METHOD
 // =====================================
 
-const prices = [9.99, 19.99, 8.5, 50.89, 30.6];
+// const prices = [9.99, 19.99, 8.5, 50.89, 30.6, 1.5];
 
 // one way to add the prices is
 // let total = 0;
@@ -90,8 +90,35 @@ const prices = [9.99, 19.99, 8.5, 50.89, 30.6];
 // }
 // console.log(total);
 
+// const prices = [9.99, 19.99, 8.5, 50.89, 30.6, 1.5];
 // using reduce we can do it in the folowing way
 // const total = prices.reduce((total, price) => {
 //   return total + price;
 // });
 // console.log(total);
+
+// const prices = [9.99, 19.99, 8.5, 50.89, 30.6, 1.5];
+// we can use reduce to find biggest or smallest nos in array
+// const minPrice = prices.reduce((min, price) => {
+//   if (price < min) {
+//     return price;
+//   }
+//   return min;
+// });
+
+//======================================
+//ARROW FUNCTION AND THIS
+// =====================================
+
+// const person = {
+//   firstName: "jack",
+//   lastName: "decker",
+//   //   fullName: function () {
+//   //     return `${this.firstName} ${this.lastName}`;
+//   //   },
+
+//   // yeh niche wale case main it wont work because of arrow function
+//   fullName: () => {
+//     return `${this.firstName} ${this.lastName}`;
+//   },
+// };
