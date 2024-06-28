@@ -80,3 +80,18 @@
 //======================================
 //THE REDUCE METHOD
 // =====================================
+
+const prices = [9.99, 19.99, 8.5, 50.89, 30.6];
+
+// one way to add the prices is
+// let total = 0;
+// for (let price of prices) {
+//   total += price;
+// }
+// console.log(total);
+
+// using reduce we can do it in the folowing way
+// const total = prices.reduce((total, price) => {
+//   return total + price;
+// });
+// console.log(total);
