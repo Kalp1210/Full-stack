@@ -7,14 +7,6 @@ h1 {
   color: olive;
 }
 
-.purple {
-  color: #7b07ff;
-}
-
-.border {
-  border: 3px solid greenyellow;
-}
-
 #banner {
   width: 100%;
 }
@@ -38,4 +30,12 @@ img.square {
 .tocnumber {
   color: black;
 }
-/*  */
+
+/* this is linked with js line 100 */
+.purple {
+  color: #7b07ff;
+}
+
+.border {
+  border: 3px solid greenyellow;
+}
