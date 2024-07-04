@@ -53,4 +53,11 @@ colorBtn.addEventListener("click", function () {
 
 // ======================================
 // EVENTS AND KEYWORD THIS
+// =====================================
+
+// IN DIFFERENT FILE
+//
+
 // ======================================
+// Keyboard Events & Event Objects
+// =====================================
