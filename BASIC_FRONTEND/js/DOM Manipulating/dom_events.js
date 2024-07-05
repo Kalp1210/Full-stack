@@ -61,3 +61,17 @@ colorBtn.addEventListener("click", function () {
 // ======================================
 // Keyboard Events & Event Objects
 // =====================================
+const objBtn = document.querySelector("#eventObject");
+
+objBtn.addEventListener("click", function () {
+  alert("click!");
+});
+
+// const objInput = document.querySelector("#eventObjectText");
+// objInput.addEventListener("keydown", function (E) {
+//   console.log(E.code);
+//   console.log(E.key);
+// });
+// objInput.addEventListener("keyup", function () {
+//   console.log("keyup!");
+// });
