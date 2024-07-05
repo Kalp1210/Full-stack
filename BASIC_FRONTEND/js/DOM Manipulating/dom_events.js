@@ -75,3 +75,21 @@ objBtn.addEventListener("click", function () {
 // objInput.addEventListener("keyup", function () {
 //   console.log("keyup!");
 // });
+window.addEventListener("keydown", function (e) {
+  switch (e.code) {
+    case "ArrowUp":
+      console.log("hi!!");
+      break;
+    case "ArrowDown":
+      console.log("bye!!");
+      break;
+    case "ArrowLeft":
+      console.log("yooooo!!");
+      break;
+    case "ArrowRight":
+      console.log("chilll!!");
+      break;
+    default:
+      console.log("ignore!!");
+  }
+});
