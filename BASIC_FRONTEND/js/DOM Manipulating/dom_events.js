@@ -109,8 +109,19 @@ form.addEventListener("submit", function (forms) {
   newLi.innerText = dogName;
   console.log(newLi);
   dogsList.append(newLi);
+  form.reset();
 });
 
 // ======================================
 //Input & Change Events
 // ======================================
+const inputEvents = document.querySelector("#inputEvents");
+const h3Input = document.querySelector("#h3Input");
+
+// inputEvents.addEventListener("change", function () {
+//   console.log("hello");
+// });
+inputEvents.addEventListener("input", function (inp) {
+  h3Input.innerText = inputEvents.value;
+  // console.log(h3Input);
+});
