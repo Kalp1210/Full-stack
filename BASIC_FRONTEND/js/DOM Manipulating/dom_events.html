@@ -47,6 +47,33 @@
       <input type="text" id="inputEvents" placeholder="inputEvents" />
     </div>
 
+    <!--======================================-->
+    <!--    Event Bubbling   -->
+    <!--======================================-->
+    <section onclick="alert('you clicked the section')">
+      <p onclick="alert('you clicked the para')">
+        i am a para
+        <button onclick="alert('you clicked the button')">click</button>
+      </p>
+    </section>
+
+    <div id="container">
+      Click to hide!
+      <button id="bubblingBtn">Change Color</button>
+    </div>
+    <br />
+    <div>
+      <form action="/username" id="userform">
+        <input type="text" id="username" placeholder="username" />
+        <input type="text" id="tweet" placeholder="tweet" />
+        <button id="submitForm">Submit</button>
+      </form>
+      <h2>name and tweet</h2>
+      <ul id="userList">
+        <li>hello</li>
+        <li>hello</li>
+      </ul>
+    </div>
     <script src="dom_events.js"></script>
   </body>
 </html>

@@ -125,3 +125,40 @@ inputEvents.addEventListener("input", function (inp) {
   h3Input.innerText = inputEvents.value;
   // console.log(h3Input);
 });
+// ======================================
+//Event Bubbling
+// ======================================
+
+const bubblingBtn = document.querySelector("#bubblingBtn");
+const container = document.querySelector("#container");
+
+bubblingBtn.addEventListener("click", function (bubble) {
+  container.style.backgroundColor = makeRandColor();
+  // it will stop event bubbling
+  bubble.stopPropagation();
+});
+
+const makeRandColor = () => {
+  const r = Math.floor(Math.random() * 255);
+  const g = Math.floor(Math.random() * 255);
+  const b = Math.floor(Math.random() * 255);
+  return `rgb(${r}, ${g}, ${b})`;
+};
+
+// ======================================
+//Event Delegation
+// ======================================
+const userform = document.querySelector("#userform");
+const username = document.querySelector("#username");
+const tweet = document.querySelector("#tweet");
+const userList = document.querySelector("#userList");
+userform.addEventListener("submit", function (userforms) {
+  userforms.preventDefault();
+  const user = username.value;
+  const tweets = tweet.value;
+  const newLi = document.createElement("Li");
+  newLi.innerText = `${user} - ${tweets}`;
+  console.log(newLi);
+  userList.append(newLi);
+  userform.reset();
+});
