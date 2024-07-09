@@ -31,6 +31,7 @@ console.log("after");
 //======================================
 // Callback Hell
 // =====================================
+
 // document.body.style.backgroundColor = "red";
 
 const colorChangeBtn = document.querySelector("#colorChangeBtn");
@@ -87,3 +88,8 @@ colorChangeBtn.addEventListener("click", function () {
 // //    if API is down, or request failed, run this
 //     })
 // })
+
+//======================================
+//  fakeRequest Using Callbacks
+// =====================================
+// promise intro wale file main hai
