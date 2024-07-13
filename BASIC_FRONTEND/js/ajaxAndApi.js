@@ -84,9 +84,34 @@
 // SETTING HEADERS WITH AXIOS
 // =====================================
 
-const getDadJokes = async () => {
-  const config = { header: { Accept: "application/json" } };
-  const res = await axios.get("https://icanhazdadjoke.com/", config);
-  console.log(res.data.joke);
+// const getDadJokes = async () => {
+//   const config = { header: { Accept: "application/json" } };
+//   const res = await axios.get("https://icanhazdadjoke.com/", config);
+//   console.log(res.data.joke);
+// };
+// getDadJokes();
+
+//======================================
+// TV SHOW SEARCH APP
+// =====================================
+const form = document.querySelector("#searchform");
+form.addEventListener("submit", async function (e) {
+  e.preventDefault();
+  const searchTerm = form.elements.query.value;
+  // console.log(form.elements.query.value);
+  console.log("Submitted!!");
+  const config = { params: { q: searchTerm } };
+  const res = await axios.get(`https://api.tvmaze.com/search/shows`, config);
+  // console.log(res.data[0].show.image.medium);
+  makeImgs(res.data);
+  form.elements.query.value = "";
+});
+const makeImgs = (shows) => {
+  for (let result of shows) {
+    if (result.show.image) {
+      const img = document.createElement("img");
+      img.src = result.show.image.medium;
+      document.body.append(img);
+    }
+  }
 };
-getDadJokes();
