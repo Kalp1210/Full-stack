@@ -1,0 +1,13 @@
+import React from "react";
+
+const DieProps = ({ numSides = 6 }) => {
+  console.log(numSides);
+  const roll = Math.floor(Math.random() * numSides) + 1;
+  return (
+    <p>
+      {numSides} sided-Die Roll : {roll}
+    </p>
+  );
+};
+
+export default DieProps;
