@@ -5,7 +5,4 @@ function Dog() {
 }
 // export default Dog;
 
-function add(x, y) {
-  return x + y;
-}
-export { Dog, add };
+export default Dog;

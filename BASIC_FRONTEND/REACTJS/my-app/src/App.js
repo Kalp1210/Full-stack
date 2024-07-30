@@ -1,12 +1,15 @@
 import logo from "./logo.svg";
 import "./App.css";
-import "./DieRolls.css";
-import Greeter from "./Greeter";
-import { Dog, add } from "./dog";
-import LoginForm from "./loginForm";
-import Die from "./Die";
-import DiceRolls from "./DiceRolls";
-add(1, 4);
+
+// import Greeter from "./components/jsxDetail/Greeter";
+// import { Dog, add } from "./components/jsxDetail/dog";
+// import LoginForm from "./loginForm";
+// import Die from "./components/jsxDetail/Die";
+// import DiceRolls from "./components/jsxDetail/DiceRolls";
+import JsxDetail from "./screens/jsxDetail/jsxDetail";
+import PokeCardScr from "./screens/pokeCard/PokeCardScr";
+
+// add(1, 4);
 function App() {
   return (
     <div className="App">
@@ -19,12 +22,13 @@ function App() {
       {/* <Die />
       <Die />
       <Die /> */}
-      <DiceRolls className="DieRolls" />
-      <DiceRolls className="DieRolls" />
+      {/* <DiceRolls />
+      <DiceRolls /> */}
+      {/* yeh screen hai */}
+      {/* <JsxDetail /> */}
+      <PokeCardScr />
 
-      <header className="App-header">
-        <h1>hellllooooo</h1>
-      </header>
+      <header className="App-header">{/* <h1>hellllooooo</h1> */}</header>
     </div>
   );
 }
