@@ -1,9 +1,15 @@
 import React from "react";
 
-const ShoppingListItems = (item, quantity, completed) => {
+const ShoppingListItems = ({ item, quantity, completed }) => {
+  const styles = {
+    color: completed ? "grey" : "red",
+    fontWeight: 600,
+    textDecoration: completed ? "line-through" : "none",
+  };
+
   return (
     <div>
-      <li>
+      <li style={styles}>
         {item} - {quantity}
       </li>
     </div>
@@ -22,4 +28,10 @@ const ShoppingListItems = (item, quantity, completed) => {
         {i.item} - {i.quantity}
       </li> */
 }
+
+// ShoppingListItems.PropTypes = {
+//   item: PropTypes.string,
+//   quantity: PropTypes.number,
+//   completed: PropTypes.bool,
+// };
 export default ShoppingListItems;

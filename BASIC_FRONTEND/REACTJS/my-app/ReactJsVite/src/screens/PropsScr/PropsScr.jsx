@@ -6,6 +6,8 @@ import DoubleDice from "../../components/PropsComp/DoubleDice";
 import Heading from "../../components/PropsComp/Heading";
 import ColorList from "../../components/PropsComp/ColorList";
 import ShoppingList from "../../components/PropsComp/ShoppingList";
+import Clicker from "../../components/PropsComp/Clicker";
+import Form from "../../components/PropsComp/Form";
 
 // for SHOPPING LIST
 const data = [
@@ -34,7 +36,11 @@ const PropsScr = () => {
 
       {/* SHOPIING LIST */}
 
-      <ShoppingList items={data} />
+      {/* <ShoppingList items={data} /> */}
+
+      {/* <Clicker /> */}
+
+      <Form />
     </div>
   );
 };
