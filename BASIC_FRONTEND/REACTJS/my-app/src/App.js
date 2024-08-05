@@ -8,6 +8,7 @@ import "./App.css";
 // import DiceRolls from "./components/jsxDetail/DiceRolls";
 import JsxDetail from "./screens/jsxDetail/jsxDetail";
 import PokeCardScr from "./screens/pokeCard/PokeCardScr";
+import ReactStateScr from "./screens/ReactStateScr";
 
 // add(1, 4);
 function App() {
@@ -26,7 +27,9 @@ function App() {
       <DiceRolls /> */}
       {/* yeh screen hai */}
       {/* <JsxDetail /> */}
-      <PokeCardScr />
+      {/* <PokeCardScr /> */}
+
+      <ReactStateScr />
 
       <header className="App-header">{/* <h1>hellllooooo</h1> */}</header>
     </div>
