@@ -37,7 +37,7 @@ const Counter = () => {
 
     // now isme each time value of count is updated to current count
     // DOUBT HAI ISME
-    setCount((currentCount) => currentCount + 1);
+    setCount((andupondugondu) => andupondugondu + 1);
     setCount((currentCount) => currentCount + 1);
     setCount((currentCount) => currentCount + 1);
   }

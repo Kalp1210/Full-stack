@@ -9,6 +9,7 @@ import "./App.css";
 import JsxDetail from "./screens/jsxDetail/jsxDetail";
 import PokeCardScr from "./screens/pokeCard/PokeCardScr";
 import ReactStateScr from "./screens/ReactStateScr";
+import ComponentDesignScr from "./screens/ComponentDesignScr";
 
 // add(1, 4);
 function App() {
@@ -29,7 +30,9 @@ function App() {
       {/* <JsxDetail /> */}
       {/* <PokeCardScr /> */}
 
-      <ReactStateScr />
+      {/* <ReactStateScr /> */}
+
+      <ComponentDesignScr />
 
       <header className="App-header">{/* <h1>hellllooooo</h1> */}</header>
     </div>
